@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Underline Effct</title>
+</head>
+<body>
+
+
+  <style>
+  .title {
+  position: relative;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2d1d1d;
+  z-index: 1;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 48%;
+  bottom: 5px;      /* নিচে কতটা থাকবে */
+  transform: translateX(-50%) rotate(-6deg);
+
+  width: 120px;     /* Highlight এর width */
+  height: 16px;     /* Highlight এর height */
+
+  background: #f5c94d;
+  border-radius: 50px;
+  z-index: -1;
+}
+    </style>
+
+    <h2 class="title">
+  Choose Your Plan
+</h2>
+    
+</body>
+</html>
